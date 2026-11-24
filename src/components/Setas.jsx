@@ -1,0 +1,20 @@
+// Setas desenhadas em SVG (ficam sempre centralizadas, ao contrário do caractere ‹ ›)
+const props = {
+  viewBox: "0 0 24 24",
+  width: 22,
+  height: 22,
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2.5,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  "aria-hidden": true,
+};
+
+export const SetaEsq = () => (
+  <svg {...props}><path d="M15 5l-7 7 7 7" /></svg>
+);
+
+export const SetaDir = () => (
+  <svg {...props}><path d="M9 5l7 7-7 7" /></svg>
+);
